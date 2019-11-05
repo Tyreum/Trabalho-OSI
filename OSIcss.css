@@ -1,0 +1,33 @@
+.container{
+    margin: 15px;
+}
+
+.bgOSI{
+	background-image: url("bgOSI.jpg");
+	height: 9370px;
+	background-repeat: no-repeat;
+}
+
+.letra{
+	color: white;
+
+}
+
+.letraOSI{
+	font-family: monospace;
+	text-align: center;
+	font-size: 130px; 
+	color: white;
+	text-shadow: 3px 3px #0c6489;
+}
+
+/*.paralax{
+
+	height: 100%;
+
+	background-image: url(fundo_principal.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: rgb(25 25 25);
+	background-size: cover;
+}
