@@ -1,33 +1,51 @@
-.container{
+.container {
     margin: 15px;
 }
 
-.bgOSI{
-	background-image: url("bgOSI.jpg");
-	height: 9370px;
-	background-repeat: no-repeat;
+.bgOSI {
+    background-image: url("bgOSI.jpg");
+    height: 9370px;
+    width: auto;
+    background-repeat: no-repeat;
 }
 
-.letra{
-	color: white;
-
+.letra {
+    color: white;
 }
 
-.letraOSI{
-	font-family: monospace;
-	text-align: center;
-	font-size: 130px; 
-	color: white;
-	text-shadow: 3px 3px #0c6489;
+.letraOSI {
+    font-family: monospace;
+    text-align: center;
+    font-size: 130px;
+    color: white;
+    text-shadow: 3px 3px #0c6489;
 }
 
-/*.paralax{
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0c6489;
+}
 
-	height: 100%;
+li {
+    float: left;
+}
 
-	background-image: url(fundo_principal.png);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-color: rgb(25 25 25);
-	background-size: cover;
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+li a:hover:not(.active) {
+    background-color: gray;
+}
+
+.active {
+    background-color: rgb(110, 203, 235);
 }

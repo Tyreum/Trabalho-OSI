@@ -1,8 +1,12 @@
-.container{
+.container {
     margin: 15px;
 }
 
-.background{
-	background-image: url("bgOSI.jpeg");
+.background {
+    background-image: url("bgOSI.jpeg");
+}
 
+.btnVoltar {
+    color: lightgrey;
+    border-radius: 20%;
 }
