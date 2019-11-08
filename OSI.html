@@ -10,5 +10,133 @@
     <div class="letra">
         <p class="letraOSI"> Modelo OSI</p>
     </div>
+    <img src="linha.png">
+    <div>
+        <h1 class="camada">Camadas</h1>
+            <h2 class="texto">&nbsp&nbspO conceito de layers separa os módulos de um software em camadas,
+                cada uma com sua contribuição para a execução do software. As camadas separam o
+                código-fonte seguindo uma forma lógica, podendo gerar pacotes físicos, mas não
+                implicam necessariamente em separação física, assim as camadas podem compartilhar CPU e até processos iguais.</h2>
+
+            <h2 class="texto">&nbsp&nbspEste modelo é dividido em sete camadas hierárquicas, ou seja,
+                cada camada usa as funções da própria ou da camada anterior,
+                para esconder a complexidade e transparecer de modo simples as operações ao usuário, seja ele um programa ou uma outra camada.</h2>
+                
+            <h2 class="texto">As camadas são empilhadas na seguinte ordem:</h2>
+    </div>
+    <img src="linha.png">
+    <div>
+        <h1 class="camada">7 - Aplicação</h1>
+        <br>
+            <h2 class="texto">&nbsp&nbspA camada de aplicação corresponde às aplicações (programas)
+                 no topo da camada OSI que serão utilizadas para promover uma interação entre
+                  a máquina-usuário (máquina destinatária e o usuário da aplicação). Esta camada
+                   também disponibiliza os recursos (protocolo) para que tal comunicação aconteça,
+                    por exemplo, ao solicitar a recepção de e-mail através do aplicativo de e-mail,
+                     este entrará em contato com a camada de Aplicação do protocolo de rede efetuando
+                      tal solicitação (POP3 ou IMAP).</h2>
+                <br><br>
+            <h2 class="texto">Tudo nesta camada é relacionado ao software.
+                     Alguns protocolos utilizados nesta camada são:
+            <h2 class="focus">  HTTP, SMTP, FTP, Telnet, SIP, RDP, IRC, SNMP, NNTP, POP3, IMAP, BitTorrent, DNS, ICMP.</h2>
+    </div>
+    <img src="linha.png">
+    <div>
+        <h1 class="camada">6 - Apresentação</h1>
+                <h2 class="texto">&nbsp&nbspA camada de Apresentação, também chamada camada de Tradução, converte o formato do dado recebido pela camada de 
+                        Aplicação em um formato comum a ser usado na transmissão desse dado, ou seja, um formato entendido pelo protocolo 
+                        usado. Um exemplo comum é a conversão do padrão de caracteres (código de página) quando o dispositivo transmissor 
+                        usa um padrão diferente do ASCII. Pode ter outros usos, como compressão de dados e criptografia.</h2>
+
+                <h2 class="texto">&nbsp&nbspOs dados recebidos da camada 7 estão descomprimidos, e a camada 6 do dispositivo transmissor fica responsável 
+                        por comprimir esses dados. A transmissão dos dados torna-se mais rápida, já que haverá menos dados a serem transmitidos: 
+                        os dados recebidos da camada 4 foram "encolhidos" e enviados à camada 1.</h2>
+                    
+                <h2 class="texto">&nbsp&nbspPara aumentar a segurança, pode-se usar algum esquema de criptografia neste nível, sendo que os dados só serão descodificados 
+                        na camada 6 do dispositivo receptor.</h2>
+                    
+                <h2 class="texto">&nbsp&nbspEla trabalha transformando os dados em um formato no qual a camada de aplicação possa aceitar, minimizando todo tipo de interferência.</h2>
+    </div>
+    <img src="linha.png">
+    <div>
+        <h1 class="camada">5 - Sessão</h1>
+            <h2 class="texto">&nbsp&nbspResponsável pela troca de dados e a comunicação entre hosts, 
+                a camada de Sessão permite que duas aplicações em computadores diferentes estabeleçam 
+                uma comunicação, definindo como será feita a transmissão de dados, pondo marcações nos dados que 
+                serão transmitidos. Se porventura a rede falhar, os computadores reiniciam a transmissão dos dados a partir 
+                da última marcação recebida pelo computador receptor.</h2>
+    </div>
+    <img src="linha.png">
+    <div>
+        <h1 class="camada">4 - Transporte</h1>
+            <h2 class="texto">&nbsp&nbspA camada de transporte é responsável por receber os dados enviados pela camada de sessão
+                     e segmentá-los para que sejam enviados a camada de rede, que por sua vez, transforma esses
+                      segmentos em pacotes. No receptor, a camada de Transporte realiza o processo inverso, ou seja,
+                       recebe os pacotes da camada de rede e junta os segmentos para enviar à camada de sessão.</h2>
+            <h2 class="texto">&nbsp&nbspIsso inclui controle de fluxo, ordenação dos pacotes e a correção de erros, 
+                    tipicamente enviando para o transmissor uma informação de recebimento, garantindo que as mensagens sejam 
+                    entregues sem erros na sequência, sem perdas e duplicações.</h2>
+            <h2 class="texto">&nbsp&nbspA camada de transporte separa as camadas de nível de aplicação (camadas 5 a 7) 
+                das camadas de nível físico (camadas de 1 a 3). A camada 4, Transporte, faz a ligação entre esses 
+                dois grupos e determina a classe de serviço necessária como orientada à conexão, com controle de erro 
+                e serviço de confirmação ou sem conexões e nem confiabilidade.</h2>
+            <h2 class="texto">&nbsp&nbspO objetivo final da camada de transporte é proporcionar serviço eficiente, confiável e de baixo custo. 
+                O hardware e/ou software dentro da camada de transporte e que faz o serviço é denominado entidade de transporte.</h2>
+            <h2 class="texto">&nbsp&nbspA entidade de transporte comunica-se com seus usuários através de primitivas de serviço trocadas em um ou mais TSAP 
+                (Transport Service Access Point), que são definidas de acordo com o tipo de serviço prestado: orientado ou não à conexão. 
+                Estas primitivas são transportadas pelas TPDU (Transport Protocol Data Unit).</h2>
+            <h2 class="texto">&nbsp&nbspNa realidade, uma entidade de transporte poderia estar simultaneamente associada a 
+                vários TSA e NSAP (Network Service Access Point black). No caso de multiplexação, associada a vários TSAP e a um 
+                NSAP e no caso de splitting, associada a um TSAP e a vários NSAP.</h2>
+            <h2 class="texto">A ISO define o protocolo de transporte para operar em dois modos:</h2>
+            <h2 class="focus">&nbsp&nbsp• Orientado à conexão</h2>
+            <h2 class="focus">&nbsp&nbsp• Não-Orientado à conexão.</h2>
+            <h2 class="texto">&nbsp&nbspComo exemplo de protocolo orientado à conexão, temos o TCP, 
+                e de protocolo não orientado à conexão, temos o UDP. É óbvio que o protocolo de transporte não orientado à 
+                conexão é menos confiável. Ele não garante - entre outras coisas - a entrega das TPDU, nem tão pouco a ordenação das 
+                mesmas. Entretanto, onde o serviço da camada de rede e das outras camadas inferiores é bastante confiável - como em redes locais - 
+                o protocolo de transporte não orientado à conexão pode ser utilizado, sem o overhead inerente a uma operação orientada à conexão.</h2>
+            <h2 class="texto">&nbsp&nbspO serviço de transporte baseado em conexões é semelhante ao serviço de rede baseado em conexões. 
+                O endereçamento e controle de fluxo também são semelhantes em ambas as camadas. Para completar, o serviço de transporte sem 
+                conexões também é muito semelhante ao serviço de rede sem conexões. Constatado os fatos acima, surge a seguinte questão: 
+                "Por que termos duas camadas e não uma apenas?". A resposta é sutil, mas procede: A camada de rede é parte da sub-rede de 
+                comunicações e é executada pela concessionária que fornece o serviço (pelo menos para as WAN). Quando a camada de rede não fornece 
+                um serviço confiável, a camada de transporte assume as responsabilidades, melhorando em suma importância a qualidade do serviço.</h2>
+    </div>
+    <img src="linha.png">
+    <div>
+        <h1 class="camada">3 - Rede</h1>
+            <h2 class="texto">&nbsp&nbspA camada de rede fornece os meios funcionais e de procedimento de transferência de comprimento variável de dados de sequências 
+            de uma fonte de acolhimento de uma rede para um host de destino numa rede diferente (em contraste com a camada de ligação de dados 
+            que liga os hosts dentro da mesma rede), enquanto se mantém a qualidade de serviço requerido pela camada de transporte. A camada de 
+            rede realiza roteamento de funções, e também pode realizar a fragmentação e remontagem e os erros de entrega de relatório. Roteadores 
+            operam nesta camada, enviando dados em toda a rede estendida e tornando a Internet possível. Este é um esquema de endereçamento lógico - os 
+            valores são escolhidos pelo engenheiro de rede. O esquema de endereçamento não é hierárquico.</h2>
+            <h2 class="texto">A camada de rede pode ser dividida em três subcamadas:</h2>
+            <h2 class="focus">&nbsp&nbsp• Sub-rede de acesso</h2>
+            <h2 class="texto">&nbsp&nbsp&nbsp&nbspConsidera protocolos que lidam com a interface para redes, tais como X.25;</h2>
+            <h2 class="focus">&nbsp&nbsp• Sub-rede dependente de convergência</h2>
+            <h2 class="texto">&nbsp&nbsp&nbsp&nbspNecessária para elevar o nível de uma rede de trânsito, até ao nível de redes em cada lado;</h2>
+            <h2 class="focus">&nbsp&nbsp• Sub-rede independente de convergência</h2>
+            <h2 class="texto">&nbsp&nbsp&nbsp&nbspLida com a transferência através de múltiplas redes.<br>&nbsp&nbsp&nbsp Controla a operação da sub rede roteamento de pacotes, 
+                controle de congestionamento, tarifação e &nbsp&nbsp&nbsp permite que redes heterogêneas sejam interconectadas.</h2>
+    </div>
+    <img src="linha.png">
+    <div>
+    <h1 class="camada">2 - Enlace de Dados</h1>
+        <h2 class="texto">&nbsp&nbspA camada de enlace de dados também é conhecida como de ligação ou link de dados. Esta camada detecta e, 
+            opcionalmente, corrige erros que possam acontecer no nível físico. É responsável por controlar o fluxo (recepção, delimitação e 
+            transmissão de quadros) e também estabelece um protocolo de comunicação entre sistemas diretamente conectados.</h2>
+    </div>
+    <img src="linha.png">
+    <div>
+        <h1 class="camada">1 - Física</h1>
+            <h2 class="texto">&nbsp&nbspA camada física define especificações elétricas e físicas dos dispositivos. Em especial, 
+                define a relação entre um dispositivo e um meio de transmissão, tal como um cabo de cobre ou um cabo de fibra óptica. Isso inclui o 
+                layout de pinos, tensões, impedância da linha, especificações do cabo, temporização, hubs, repetidores, adaptadores de rede, adaptadores 
+                de barramento de host (HBA usado em redes de área de armazenamento) e muito mais. A camada física é responsável por definir se a transmissão pode 
+                ser ou não realizada nos dois sentidos simultaneamente. Sendo a camada mais baixa do modelo OSI, diz respeito a transmissão e recepção do 
+                fluxo de bits brutos não-estruturados em um meio físico. Ela descreve as interfaces elétricas, ópticas, mecânicas e funcionais para o meio 
+                físico e transporta sinais para todas as camadas superiores.</h2>
 </body>
 </html>
