@@ -26,30 +26,30 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0c6489;
-    opacity: 0;
-    color: whitesmoke;
+    align-content: center;
+    background-color: #060606;
+    margin-left: 510px;
 }
 
 li {
     float: left;
+    color: whitesmoke;
+    align-content: center;
 }
 
 li a {
     display: block;
     color: black;
     text-align: center;
+    font-size: 30px;
     padding: 14px 16px;
     text-decoration: none;
     font-family: monospace;
+    color: #0c6489;
 }
 
-li a:hover:not(.active) {
-    background-color: gray;
-}
-
-.active {
-    background-color: rgb(110, 203, 235);
+li :hover {
+    color: whitesmoke;
 }
 
 .camada {
@@ -80,4 +80,8 @@ li a:hover:not(.active) {
     text-align: justify;
     margin-right: 100px;
     margin-left: 130px;
+}
+
+.divisao {
+    border-right: 1px solid whitesmoke;
 }
