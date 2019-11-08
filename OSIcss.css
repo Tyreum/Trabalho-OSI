@@ -28,13 +28,11 @@ ul {
     overflow: hidden;
     align-content: center;
     background-color: #060606;
-    margin-left: 510px;
 }
 
 li {
     float: left;
     color: whitesmoke;
-    align-content: center;
 }
 
 li a {
