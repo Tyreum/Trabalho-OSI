@@ -33,6 +33,7 @@ ul {
 li {
     float: left;
     color: whitesmoke;
+    
 }
 
 li a {
@@ -82,4 +83,12 @@ li :hover {
 
 .divisao {
     border-right: 1px solid whitesmoke;
+}
+
+.mlinha{
+    margin-top: -20px;
+}
+
+.main{
+    margin-top: -53px;
 }
